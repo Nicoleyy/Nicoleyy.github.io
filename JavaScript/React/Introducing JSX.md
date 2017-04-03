@@ -1,6 +1,6 @@
 ## What is JSX ?
 JSX looks like HTML and gets transformed to JavaScript. Unlike the past, instead of putting JavaScript into HTML, JSX allows us to put 
-HTML into JavaScript.JSX expression evaluate to ReactElement, fundamentally, JSX just provide syntactic sugar for the 
+HTML into JavaScript. JSX expression evaluate to ReactElement, fundamentally, JSX just provide syntactic sugar for the 
 `React.createElement(component, props, ...children)` function. The JSX code: 
 ```js
 <MyButton color="blue" shadowSize={2}>
@@ -34,16 +34,21 @@ function getGreeting(user) {
 
 ## Advantage of JSX.
 1. Easier
+
 Basically, by using JSX you can write concise HTML/XML-like structures (e.g., DOM like tree structures) in the same file as you write 
 JavaScript code. JSX offers a solid class system much like Java, freeing the developers from working with the too-primitive 
 prototype-based inheritance system provided by JavaScript. Expressions and statements, however, are mostly equal to JavaScript, so it 
 is easy for JavaScript programmers to start using JSX.
+
 2. Faster
+
 JSX performs optimization while compiling the source code to JavaScript. The generated code runs faster than an equivalent code written 
 directly in JavaScript. It is actually a declarative syntax that's used to express the **virtual DOM**. JSX gets intrpreted and 
 converted to Virtual DOM, which get diffed against the real DOM. Rather than rewrite the whole DOM tree, only the differences get 
 applied. That makes React renders faster.
+
 3. Safer
+
 By default, React DOM escapes any values embeded in JSX before rendering them. Thus it ensures that you can never inject anything that's
 not explicitly written in your application. Everthing is converted to a string before being rendered.
 
