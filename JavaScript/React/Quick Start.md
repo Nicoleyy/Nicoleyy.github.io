@@ -76,3 +76,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+Do not modify state directly, use `setState` instead. The only way to assign this.state is in the constructor. React may batch multiple
+`setState` calls into a single update for performance.
+```js
+this.setState(function(prevState, props) {
+  return {
+    counter: prevState.counter + props.increment
+  };
+});
+```
+Neither parent nor child components can konw if a certain component is statefull or stateless, and they shouldn't care whether it is 
+defined as a function or a class.
