@@ -28,10 +28,21 @@ that your funcitons should return a promise, which can do one of the two things:
 * Become fullfied by a value.
 * Become rejected by an exception.
 
+on the other hand, `then` function is a mechanisam for attacking callbacks for an aggregation collection. It's a mechanisam 
+for applying a transformation to a promise, and yielding a new promise frome that transformation.
+* If either handler returns a value, the new promise is fullfied with that value.
+* If either handler throws an exception, the new promise is rejected with that exception.
+This breaks into four scenarios, depending on the state of the promise.
+1. Fullfied, fullment handler returns a value: simple function transformation.
+2. Fullfied, fullmentt habdler returns an exception: getting data, and throwing exception in responding to it.
+3. Rejected, rejection handler returns a value, a `catch` clause got the error and handle it.
+4. Rejected, rejection handler returns an exception: a `catch` clause got the error and re-throw it(or a new one).
+Furthermore, note that by catching exceptions and transforming them into rejections, we take care both intentional and 
+nonintentional exceptions, just like in sync code.
 
 ## Reference
-[You're Missing the Point of Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)
-[Promise](https://www.promisejs.org/)
+* [You're Missing the Point of Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)
+* [Promise](https://www.promisejs.org/)
 
 
  
