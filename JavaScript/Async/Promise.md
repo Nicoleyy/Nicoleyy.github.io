@@ -49,6 +49,7 @@ typeof p.then === 'function') {
 } else {
 //not thenable
 }
+```
 
 ## Reference
 * [You're Missing the Point of Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)
