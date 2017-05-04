@@ -20,6 +20,7 @@ Parsing HTML to construct the DOM tree -> Render tree construction -> Layout the
 ![Webkit主要流程](./libs/Webkit主要流程.png)
 * Mozila(Firefox)
 ![Mozila主要流程](./libs/Mozila主要流程.png)
+
 ## Reference
-*[渲染树构建、布局及绘制](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=zh-cn)
-*[浏览器是怎样工作的：渲染引擎，HTML解析](http://ued.ctrip.com/blog/how-browsers-work-rendering-engine-html-parsing-series-ii.html)
+* [渲染树构建、布局及绘制](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=zh-cn)
+* [浏览器是怎样工作的：渲染引擎，HTML解析](http://ued.ctrip.com/blog/how-browsers-work-rendering-engine-html-parsing-series-ii.html)
