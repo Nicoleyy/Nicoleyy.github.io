@@ -53,7 +53,7 @@ MVP模式有两种，Passive View和Supervising Controller。而大多数情况�
 
 MVP模式把MVC模式中的Controller换成了Presenter。MVP层次之间的依赖关系如下：
     
-    ![MVP-DEP](./libs/mvp-dep.png)
+![MVP-DEP](./libs/mvp-dep.png)
     
 MVP打破了View原来对于Model的依赖，其余的依赖关系和MVC模式一致。
  
@@ -61,7 +61,7 @@ MVP打破了View原来对于Model的依赖，其余的依赖关系和MVC模式�
 
 MVP的调用关系如下：
     
-    ![MVP-CALL](./libs/mvp-call.png)
+![MVP-CALL](./libs/mvp-call.png)
    
 关键点：
 
@@ -85,7 +85,7 @@ View的接口即可。然后依赖注入到Presenter中，单元测试的时候�
 Passive View模式下View非常Passive，Presenter让它干什么它就干什么。而Supervising Controller模式中，Presenter会把一部分简单的同步逻辑交给
 View自己去做，Presenter只负责比较复杂的、高层次的UI操作，所以可以把它看成一个Supervising Controller。
 
-    ![MVP-SC](./libs/mvp-sc.png)
+![MVP-SC](./libs/mvp-sc.png)
     
 ## MVVM
 MVVM可以看作是一种特殊的MVP（Passive View）模式，或者说是对MVP模式的一种改良。
@@ -101,7 +101,7 @@ MVVM代表的是Model-View-ViewModel,ViewModel的含义就是 "Model of View"，
 
 MVVM的依赖关系和MVP依赖，只不过是把P换成了VM。
     
-    ![MVVM-DEP](./libs/mvvm-dep.png)
+![MVVM-DEP](./libs/mvvm-dep.png)
     
 **MVVM的调用关系**
 
