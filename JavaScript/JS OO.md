@@ -44,4 +44,5 @@ bar.myName() // "MyName Nicole"  "Do something other"
 bar.myLabel() // "MyLabel"  "Smart"
 ```
 bar的结构
+
 ![OO](./libs/oo.png)
