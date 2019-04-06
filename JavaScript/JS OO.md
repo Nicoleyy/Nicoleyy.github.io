@@ -8,12 +8,11 @@ function extands(source, target) {
 }
 function OO(parentclass, subclass) {
   var parent = parentclass.prototype
-  var child = subclass.prototype
-  parent.constructor = parentclass
-  extands(parent, child)
   function F() {}
   F.prototype = subclass.prototype
+  F.prototype.constructor = parentclass
   subclass.prototype = new F()
+  extands(parent, subclass.prototype)
   subclass.prototype.constructor = subclass
   subclass.prototype.super = parent
 }
