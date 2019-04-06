@@ -39,7 +39,7 @@ Bar.prototype.myLabel = function () {
   console.log('MyLabel', this.label)
 }
 
-let bar = new Bar('Nicole', 'Smart')
+var bar = new Bar('Nicole', 'Smart')
 bar.myName() // "MyName Nicole"  "Do something other"
 bar.myLabel() // "MyLabel"  "Smart"
 ```
